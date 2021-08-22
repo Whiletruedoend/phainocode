@@ -1,0 +1,1304 @@
+                                Phainocode 4.1
+                              Official standard
+                     (x) Copyleft, Marїnais, 13.07.2006
+
+
+                                Foreword
+
+     In 1995, the American Robert A. Hayden released the third version of 
+the so-called. "Geek Code", developed as a compact form of transmission by 
+correspondents of computer correspondence information about themselves by 
+means of specific symbols within the letter. The need for this arose 
+because, through computer communications, arbitrarily different people from
+arbitrarily different places can communicate, who do not know each other in
+advance, never who met each other and did not have time for a long and 
+detailed story about themselves to their interlocutors, especially since
+there can be a lot of them at the same time.
+     Geek code is much more informative than a traditional business card or 
+signature, but much more informative than a profile or text autobiography.
+His invention is a natural reaction of mankind to the fast pace of life, an
+integral part of which has become an active exchange of information,
+combined with increased requirements for economy, and a gradual transition
+from direct visual communication to abstract, implemented by technical means. 
+     In addition to briefly introducing yourself to a pen correspondent, 
+another use of a geek code can be a compact and moderately intrusive 
+demonstration of your preferences, beliefs, and merits in public, or looking
+for an interlocutor or interest partner. Computer correspondents often feel
+the need for such self-expression, because computer mail is technically
+distinguished by a high degree of impersonality and anonymity. A person, on
+the other hand, is psychologically oriented towards communication with an
+individual. Users have already fully mastered the implementation of this need
+through various technical elements of the letter (pseudonym, greeting,
+signature, Tearli-ne, Tagline and Origin, kludges), as well as the [Team ...]
+signature. Geek-code, therefore, is not an innovation in this regard and
+naturally continues the already tested decision time. 
+     Unfortunately, the original version of Geek Code, with all its
+progressiveness in basis, both in the style used in the description and in
+its ideology too local, focused purely on the residents of the United States
+and culturally and economically similar states, and therefore practically not
+suitable for users of the Russian-speaking cyberspace. A simple translation
+of the description from English and even a slight adaptation of the situation
+does not save the day, so, apparently, the only way for its further
+development in the domestic environment is in a complete revision of the
+original code with its transfer to the current conditions of this
+environment. In addition, the original version is largely built as a means of
+extravagantly highlighting the bearer of the code among others, similar to
+the numerous shocking outbursts of youth fashion. This determined the
+insufficient prevalence of geek-code until now and a frivolous attitude
+towards it among wide circles of network users. 
+     All this led the author of this standard to the idea of ​​developing a new
+code that would better correspond to domestic realities and would be suitable
+for a much larger circle of users. Starting with a simple adaptation called
+"Geek-R", this code, as it evolved, lost compatibility with its American
+ancestor and moved from a simple questionnaire to specialized descriptive
+languages. In this regard, the author made the decision to assign it a
+fundamentally new name "Phainocode" ("Fenocod"; from the Greek. phainomai -
+to manifest - commonly used to refer to external signs of something (for
+example, the term "phenotype" in biology)) that would emphasize its
+significant difference from the Geek Code itself. Also, during the
+development, the aforementioned tendencies to youth shocking and
+ostentatiousness were completely eliminated. This code is a serious means of
+presenting information, aimed at a wide range of people and does not carry
+any elite subtext. 
+     The author views Phainocode as continuously improving and a system 
+adapting to current social and technical conditions. That's why its final
+version, obviously, will not be written ever. author makes every possible
+effort to make Phainocode relevant and informative enough, while keeping it
+highly compact. Insofar as the problem of compact presentation of interlocutors
+to each other in human society is quite new, Phainocode does not pretend to be 
+its final solution and allows many parallel approaches both within the framework
+of similar methods, and on a completely different basis.
+    
+    List of individuals who contributed to the creation of this standard: 
+
+     Sergey Ermakov (wMaster) +-- (2:5020),
+     biowit (Roman Balaev) (2:5020),
+     Dima Bystrov (2:5029),
+     Alexander Grafsky (2:5020),
+     NoZDR (Ruslan Marchenko) (2:5020),
+     DimaS Scherbyna (2:5020),
+     OLA Dration (BBS Guardian) (2:5020),
+     Grax (Dmitriy Balashov) (2:5010).
+
+                           Technical implementation
+
+     Phainocode is a sequence of tokens separated by spaces, each of which 
+describes some aspect of the human personality. The token consists of a 
+constant marker (defining the described aspect) and one or several variables
+(quantitatively or qualitatively characterizing it). 
+     Obviously, the sequence of the use of tokens does not matter, since
+Phainocode is supposed to be human readable. However, nothing in the structure
+of Phainocode itself does not interfere with its interpretation by software,
+for which a rigid sequence may be preferable number of tokens. For this reason,
+the author strongly recommends using tokens are strictly in the order given
+in this description. 
+     The tokens used are selected by the user from a variety of possible ones. 
+None of these are required. The absence of a token in a specific code does not 
+imply the unwillingness of its owner to touch upon this topic in correspondence.
+In case, if you want to warn your interlocutors that you avoid discussing some
+issue in principle, you should use the metacharacter provided for this (see below). 
+     All letters in the code are case-sensitive.
+     A token consists of a tag and a sequence of variables.
+     There are three types of variables used in tokens: literal, numeric, and relative.
+     The literal variable takes as the main part any letter or combination of letters, 
+the meaning of which is given in the explanatory text. A combination of several values 
+at the same time is permissible. 
+
+     Example: osLW - "I use Linux and Windows'95+";
+
+     Numeric variable takes some integer as the main part a number written in 
+10-ary notation, unless otherwise specified in the explanatory text.
+
+     Example: kg75 - "My weight is 75 kg";
+
+     The relative variable characterizes a certain relative value, subjectively 
+estimated by you independently, and as the main part takes one of the standard
+symbols (1, 2, 3, 4, 5), selected from the scale, given in the explanatory text. 
+
+     Example: veg2 - "I have a negative attitude towards vegetarianism";
+
+     Below in the text, variable designations are enclosed in angle brackets. <l>
+denotes a literal variable, <n> is numeric, <s> is relative. If
+there are several variables in the token, then each of them is numbered.
+
+The following metacharacters modify the meaning, but they can also replace it,
+depending on the meaning. Their order is predetermined. 
+
+   # - "secret"
+    Indicates that you do not want to disclose information about yourself on this matter
+    (used as an independent meaning).
+
+     Example: b# - "Don't ask me how old I am, I don't admit it anyway!"
+
+   0 - "not relevant"
+    Indicates that you objectively do not have the opportunity in this aspect,
+    the question is irrelevant to you or is rejected by you (used as an independent
+    value).
+
+     Example: Int0 - "I have no access to the Internet."
+
+   @ - "all"
+    For literal variables, replaces an enumeration of all possible values
+    (used as an independent meaning). 
+
+     Example: WWW@ - "I am a true master of web technologies and I own them all."
+
+   & - "etc"
+    Indicates a non-standard answer (used as an independent value for relative 
+    variables or as one of the options for whether teral, recorded last). 
+
+     Example: HarB&  - "I am a brunette with a very unusual haircut."
+     Example: osLW&  - "I use Linux, Windows'95 + and another rare
+                       an operating system that is not listed (e.g. BeOS )."
+
+   ? - "don't know"
+    Indicates that you are not aware of the matter and cannot express your
+    opinion (used as an independent meaning). 
+
+     Example: dem? - "What is 'demomaking', I do not know, and therefore
+                                    I can't tell how I feel about him." 
+
+   ~ - "variably"
+    Indicates that your answer to a question is volatile and varies widely
+    affairs depending on conditions or your mood (used as meaning alone or 
+    in addition to the previously indicated meaning and immediately after it). 
+
+     Example: Har~~ - "I often radically dye and change my hairstyle."
+     Example: hum3~ - "I usually have a normal sense of humor, but it happens
+                      changeable."
+
+   + - "with a little"
+    For relative variables, means your choice of an intermediate value
+    on a scale higher than that indicated, but less than the scale division. 
+    In combination with the highest value, it indicates your desire to draw 
+    attention to a particularly high degree of this characteristic.For literal
+    variables, means a higher than usual degree of the selected value.
+    (Used in addition to and immediately after the above value). 
+
+     Example: fuk5+ - "I just love to swear! :-)"
+
+   - - "without little"
+    For relative variables, means your choice of an intermediate value on a 
+    scale lower than that indicated, but by an amount less than the price
+    of the scale. Combined with the lowest value means your aspiration to
+    draw attention to a particularly low degree of this characteristic. For
+    literal variables means a lower than usual degree of the chosen-value.
+    (Used in addition to the above value and immediately after it). 
+
+     Example: lng3-fr- - "I know English below average, I know a little
+                          French."
+
+   * - "note"
+    Means that the specified standard answer requires further clarification
+     and is valid only in some of its subdomains (used in addition to the 
+     previously indicated value and immediately after it). This symbol 
+     serves as a warning to the interlocutor that the information given 
+     requires further clarification by means of natural language. 
+
+     Example: wrz4* - "I have a large fund of computer information, but not 
+                                    in general, but only of special types."
+
+   $ - "forcedly"
+    Means that this characteristic is forced under the influence of 
+    circumstances and does not coincide with your inner desire (used in
+    addition to and immediately after the above value). 
+
+     Example: ech1$ - "I rarely read echo conferences, because I do not have 
+                                                      for this enough time."
+
+   > - "desire"
+    Means that the characteristic that follows immediately after this symbol 
+    in the form of the "main representation of the quantity" is not valid, 
+    but only the one you want (for literal variables it is used as an 
+    independent value, for relative variables - in addition to the specified 
+    actual value and immediately after it). 
+
+     Example: petc>m   - "I have a cat and I also plan to have a rodent."
+             prgaW1>4 - "I want to learn how to program well in assembly 
+                        language for Windows'95 +, although for now about 
+                              programming from me only theoretical ideas"
+
+   ! - "refusal"
+    Indicates that you do not wish to discuss the matter in principle.
+     considerations (used as an independent value or in addition to the 
+     previously specified value and immediately after it). This symbol
+     serves as a warning to the interlocutor. 
+
+     Example: God!  - "I would rather not discuss the topic of religion."
+     Example: pol2! - "I am a conservative politically, but this question
+                      please do not discuss with me."
+
+   % - "recruiter"
+    Indicates that through you it is possible to contact an activist in an 
+    activity, associated with the meaning of the token. (Used in addition to 
+    the specified before and immediately after). 
+
+     Example: god1% - "I am a big opponent of religion and through me you can 
+                            contact an even greater activist in this matter."
+
+   =<s> - "merit"
+    For a number of tokens (by meaning) through the relative parameter s 
+    indicates assessment of the results of your activities in this field. 
+    (Used in addition to and immediately after the above value).
+
+     Example: xsc4=3 - "I have a positive attitude towards unrecognized sciences, 
+                             and I have a number of developments in this area."
+
+   < - "attention"
+    Indicates your desire to pay special attention to this characteristic (used in
+    addition to the previously indicated value and immediately after it). 
+
+     Example: arg5< - "Keep in mind that you shouldn't even try to convince me of 
+                                                anything: you will be worse off."
+
+                                Code header
+     The main token sequence is preceded by a special header. It starts with a 
+     "_" character followed immediately by the main part. 
+
+     She lists your approximate areas of activity, hobbies, or topics which you
+     would like to discuss and is a sequence of following designations: 
+
+  A - artistic arts;
+  B - biology and medicine;
+  C - communications;
+  D - home economics and construction;
+  E - electrical equipment;
+  G - graphics;
+  H - social manipulation (hacking);
+  J - jurisprudence;
+  L - linguistics and semiotics;
+  M - mathematics and computer science;
+  N - exact natural sciences;
+  O - exploitation and improvement of the organism;
+  P - computer science {PC};
+  S - social sciences;
+  T - publishing and proofreading {typing};
+  U - journalism;
+  W - security and military activities;
+  a - mechanical engineering {automobile};
+  c - commerce;
+  d - design;
+  e - education;
+  l - literature;
+  m - music;
+  h - philosophy;
+  p - policy;
+  s - psychology;
+  u - cooking;
+  x - non-academic sciences and theories {x-science}. 
+
+     Each designation can be supplemented with the metacharacters described above.
+    as literal. 
+
+                                Code tokens
+
+                                Your organism
+
+b<n1><n2><n3>
+  Date of Birth:
+   The <n1> parameter specifies the day as a two-digit number;
+   The <n2> parameter specifies the month as a two-digit number;
+   The <n3> parameter specifies the year as the last 2 digits in the Gregorian
+   lendar. The parameter can be omitted;
+
+Permitted metasymbols: # + - !
+Unacceptable metasymbols: 0 @ & ? * $ > % = <
+
+X<l><s>
+  Gender and sexuality.
+  The l parameter indicates gender and related characteristics:
+    X - female;
+    Y - male;
+    ' - virginity;
+  The parameter s describes the degree of sexuality:
+    5 - "I think only about sex";
+    4 - active;
+    3 - normal;
+    2 - below average;
+    1 - "antisex";
+
+bod<n><s>
+  Body type.
+  The parameter n describes the height in cm.
+  The parameter s describes the relative nature of the transverse physique: 
+    5 - fat;
+    4 - thicker than average;
+    3 - normal;
+    2 - thinner than average;
+    1 - thin;
+
+kg<n>
+  Body weight in kg.
+
+Har<l><s>
+  Hair.
+  The l parameter describes the color and related characteristics:
+    B - black;
+    b - brown;
+    g - grey;
+    l - light;
+    r - red;
+    w - white;
+    " - wig;
+    ' - the hair is artificially dyed;
+  The s parameter describes the length/thickness of the hairstyle:
+    5 - below the belt;
+    4 - from the shoulders to the waist;
+    3 - thick hair, but not long;
+    2 - short haircut;
+    1 - bald or shaved;
+
+har<s1><s2><s3>
+  Facial vegetation.
+  The s1 parameter describes the beard:
+    5 - long beard;
+    4 - short beard;
+    3 - "weekly unshaven";
+    2 - "two days unshaven";
+    1 - clean shaven;
+  The s2 parameter describes the mustache:
+    3 - "like a cricket";
+    2 - small;
+    1 - clean shaven;
+  The s3 parameter describes the sideburns:
+    3 - sideways;
+    2 - medium;
+    1 - absent;
+
+eye<l><s>
+  Eyes.
+   The l parameter describes the color of the iris:
+    B - black;
+    G - green;
+    b - brown;
+    g - grey;
+    l - light-blue;
+    r - red;
+  The s parameter describes the features of vision:
+    5 - "I see like an eagle";
+    4 - normal;
+    3 - "I don't see very well, but I don't wear glasses or contact lenses";
+    2 - "I wear contact lenses";
+    1 - "I wear glasses";
+
+skn<s>
+  Color of the skin:
+    5 - "negro";
+    4 - swarthy;
+    3 - tanned European;
+    2 - slightly tanned European;
+    1 - "pale toadstool";
+
+drs<s1><s2><s3>
+  Clothing.
+  The s1 parameter describes the preferred clothing style:
+    5 - strictly official;
+    4 - with a tendency towards formality;
+    3 - standard;
+    2 - with a tendency to the caller;
+    1 - the caller;
+  The s2 parameter describes the fashion of the clothes:
+    5 - "according to the last squeak";
+    4 - "I try to keep up";
+    3 - indifferent;
+    2 - with a tendency towards conservatism;
+    1 - stubborn conservative;
+  The s3 parameter describes the personality of the garment:
+    5 - completely individual style;
+    4 - "I try to stick to a certain style";
+    3 - indifferent;
+    2 - "I dress normally";
+    1 - "I completely blend in with the crowd on the street";
+
+bad<s1><s2><s3>
+  Bad habits.
+  The s1 parameter describes the consumption of alcoholic beverages:
+    5 - a convinced teetotaler;
+    4 - only on special days;
+    3 - moderate;
+    2 - "I love it more often";
+    1 - "Nutro demands regularly."
+  The s2 parameter describes smoking:
+    5 - "I can't stand tobacco smoke organically";
+    4 - "I do not smoke";
+    3 - occasionally;
+    2 - moderate;
+    1 - "This is what my lungs love";
+  The s3 parameter describes the use of other psychoactive substances:
+    5 - "I don't even eat chocolate";
+    4 - "I do not use";
+    3 - "I love tonic drinks";
+    2 - "I play around, sometimes, with easy means";
+    1 - "This is necessary for me regularly to maintain clarity of mind";
+
+Hea<s>
+  Your health condition:
+    5 - "Healthy as a bull";
+    4 - "I hardly get sick";
+    3 - "I am sick like everyone else";
+    2 - "chronicle";
+    1 - "wreck";
+
+hea<s>
+  Attitude towards the idea of a rational healthy lifestyle:
+    5 - an ardent adherent;
+    4 - approving;
+    3 - indifferent;
+    2 - devil-may-care;
+    1 - "It is better to have some fun than torment yourself all your life";
+
+sp<s>
+Attitude to physical education:
+     5 - professional athlete;
+     4 - amateur;
+     3 - moderate;
+     2 - rarely;
+     1 - "frail";
+
+                               Computer
+
+PC<n><s1><s2>
+The role of the computer in life.
+  The n parameter indicates the year of starting work with the computer in the 
+  form of the last 2 digits.
+  The s1 parameter describes the intensity of the session:
+    5 - almost round the clock every day;
+    4 - a lot;
+    3 - moderately;
+    2 - rarely;
+    1 - extremely rare;
+  The s2 parameter describes psychological attachment:
+    5 - "crazy";
+    4 - "I'm fond of";
+    3 - "I use it as a familiar tool";
+    2 - "I use it only when necessary";
+    1 - "I try not to use";
+
+hw<s><l>
+  The hardware you have. The s parameter describes the general modernity of the 
+  base part of the computer system you are using as your base:
+    5 - "Just installed the processor announced 2 weeks ago";
+    4 - not older than 2 years;
+    3 - typical;
+    2 - obsolete;
+    1 - "exhibits of the historical museum". 
+  The l parameter lists the special peripherals with which you have:
+    A - Arvid;
+    C - CD burner;
+    D - DVD burner;
+    M - precision input manipulator;
+    P - high quality printer;
+    S - Sound adapter;
+    a - palmtop;
+    d - widescreen display;
+    f - digital camera;
+    l - plotter;
+    m - modem;
+    n - notebook;
+    p - low quality printer;
+    s - scanner;
+    v - digital video camera;
+
+Net<s1><s2><s3>
+  Attitude towards the main types of computer communications.
+  The s1 parameter describes the attitude towards BBS:
+    5 - old sysop / regular;
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "They became extinct in the last century";
+  The s2 parameter describes the relationship to FTN networks:
+    5 - seasoned fidoshnik;
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "A bunch of unshaven fidoras";
+  The s3 parameter describes the relationship to the Internet:
+    5 - a seasoned Internet user;
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "The World's Dump of Pornography";
+
+net<l>
+  Used types of computer communications:
+    B - BBS;
+    F - Fido;
+    I - IRC;
+    Q - ICQ;
+    U - Usenet;
+    W - WWW;
+    c - HTTP-chats;
+    e - e-mail;
+    f - small FTN networks;
+    p - file-sharing networks {peer-to-peer};
+    u - forums;
+
+Int<l>
+  The quality of the Internet access you use:
+    5 - dedicated line at home;
+    4 - purchased dialup;
+    3 - dedicated line at work;
+    2 - donated/public/shorthand dialup;
+    1 - public places/at a friend's;
+
+com<s>
+  What is most important for you in computer communications:
+    5 - communication only;
+    4 - communication rather than data (passive information);
+    3 - both communication and data;
+    2 - data rather than communication;
+    1 - data only;
+
+msg<s>
+  Frequency of reading network correspondence and sending replies to it:
+    5 - every day;
+    4 - from 1 to 3 days;
+    3 - from 3 to 7 days;
+    2 - from 1 to 2 weeks;
+    1 - sporadically;
+
+ech<s>
+  How many network echo conferences do you write out approximately:
+    5 - > 500;
+    4 - 100-500;
+    3 - 50-100;
+    2 - 10-50;
+    1 - < 10;
+
+sl<s>
+  Attitude towards computer slang:
+    5 - "IMHO current subject and use it";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "Stop mocking the language!";
+
+OS<s1><s2><s3><s4>
+Relation to the main classes of operating systems.
+  The s1 parameter describes the relation to DOS:
+    5 - "old, but reliable";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "dead long ago".
+  The s2 parameter describes the relationship to OS / 2:
+    5 - "the best system";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "dead-end invention";
+  The s3 parameter describes the relation to Linux (Unix in general):
+    5 - "system of the future";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "inventions of eccentrics";
+  The s4 parameter describes the relation to Windows (all versions):
+    5 - "Of course, but what else?";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "Must die!";
+
+os<l>
+  Classes of operating systems used:
+    D - DOS and Windows 3.x;
+    L - Linux;
+    N - Novell Netware;
+    O - OS / 2;
+    T - Windows NT +;
+    U - Unix (except Linux);
+    W - Windows'95 +;
+
+prg<l1><l2><s>
+  The l1 parameter lists the types of programming languages that you speak:
+    A is Ada;
+    B - Basic;
+    C - C ++;
+    F - Fortran;
+    J - Java;
+    K is Cobol;
+    P - Pascal;
+    R - REXX;
+    V - VisualBasic;
+    a - Assembler;
+    c - C;
+    d - Delphi;
+    f - Forth;
+    l - Lisp;
+    o - Prolog;
+    r - Perl;
+    x - FoxPro;
+    y - Python;
+  The l2 parameter lists the operating systems under which you program:
+    D - DOS и Windows 3.x;
+    L - Linux;
+    N - Novell Netware;
+    O - OS/2;
+    T - Windows NT+;
+    U - Unix (except Linux);
+    W - Windows'95+;
+  The s parameter describes the degree of programming skill:
+    5 - masterly;
+    4 - not bad;
+    3 - medium;
+    2 - with difficulty;
+    1 - theoretical concepts only;
+
+dem<s>
+  Attitude towards demomaking:
+    5 - "I write myself";
+    4 - approving;
+    3 - neutral;
+    2 - "Freaks, they have nothing else to do";
+    1 - "idiocy";
+
+WWW<l>
+  What web technologies do you own:
+    A - ASP;
+    C - CSS;
+    D - DHTML;
+    F - Flash;
+    G - CGI;
+    H - HTML;
+    I - ISAPI;
+    J - JavaScript, VBScript, JScript;
+    Q - SQL;
+    S - SSI;
+    V - VBScript;
+    W - WAP;
+    X - XML;
+    a - Java Applets;
+    h - PHP;
+    j - JSP;
+    p - PerlScript;
+    u - Push;
+
+CvP<s>
+  What style of programming languages (C/C ++ or Pascal/Delphi) do you prefer:
+    3 - C/C++;
+    2 - both equally;
+    1 - Pascal/Delphi;
+
+wrz<s>
+  The size of the available fund of computer information (software,data, 
+  digitized data, source codes, etc.):
+    5 - gigabytes of "vares";
+    4 - a lot;
+    3 - medium set;
+    2 - little;
+    1 - "I try to live at a minimum";
+
+hex<s>
+  Do you know how to work with programs at an undocumented (machine) level:
+    5 - "I read" hex "like a book, crush any protection";
+    4 - quite experienced;
+    3 - medium;
+    2 - with difficulty;
+    1 - "I can't do it at all";
+
+
+                                  Politics
+
+pol<s>
+  Political views:
+    5 - anarchist;
+    4 - liberal;
+    3 - moderate;
+    2 - conservative;
+    1 - totalitarian;
+
+ec<s>
+  Attitude towards regulation of the economy:
+    5 - "For completely state administration";
+    4 - "I sympathize with public administration";
+    3 - neutral;
+    2 - "I sympathize with the free market";
+    1 - "For a completely free market";
+
+Eg<s>
+  Attitude towards the idea of equality of people in society:
+    5 - "All are born the same and are worthy of equal rights";
+    4 - "Good equality allows for exceptions";
+    3 - neutral;
+    2 - "Everyone deserves what he has achieved himself";
+    1 - "Equality exists only in a herd of sheep";
+
+pub<s>
+  Attitude towards publicity and public availability of information:
+    5 - "Everything must be open";
+    4 - "It is necessary to secret only when absolutely necessary";
+    3 - neutral;
+    2 - "Freedom of information must be monitored";
+    1 - "Availability of information leads to trouble";
+
+gov<s>
+  Attitude towards the current government:
+    5 - an ardent admirer;
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "How long will the people endure?" 
+
+USA<s>
+  Relationship to the United States and North American Culture:
+    5 - "a model for all mankind";
+    4 - "I kind of sympathize";
+    3 - neutral;
+    2 - "Yankee, go home!";
+    1 - "Remove this abomination from the face of the planet";
+
+mil<s>
+  Attitudes towards the existence of universal conscription:
+    5 - "A worthy army can only be created in this way";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "a cynical kind of legal slavery";
+
+gun<s>
+  Attitude towards the idea of legalizing firearms for self-defense [developed by Alexander Grafsky]:
+    5 - "like in the Wild West";
+    4 - "Allow under strict control";
+    3 - "The society is not ready yet, and then we will see";
+    2 - "Only employees of organizations at risk";
+    1 - "In the state of drunkards and psychopaths, everyone will shoot each other";
+
+exe<s>
+  Attitude towards the death penalty:
+    5 - "That's right, the freaks must be destroyed";
+    4 - "Sometimes it is reasonable";
+    3 - neutral;
+    2 - condemning;
+    1 - "Murder is never allowed";
+
+sex<s>
+  Your attitude to the sexual revolution:
+    5 - "Against this, only physiologically defective";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "unhealthy idea of preoccupied libertines";
+
+abo<s>
+  Attitude towards abortion:
+    5 - "Parenting must be a licensed profession";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "real murder";
+
+god<s>
+  Attitudes towards the participation of religion in society:
+    5 - "Yes, we must all live according to the laws of God";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "Tired of these clerics, how long can you cling to the old days?";
+
+(c)<s>
+  Relationship to copyright:
+    5 - "Without him, no one will create anything";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "brake of progress";
+
+hak<s1><s2>
+  Attitude towards computer dissidence.
+  The parameter s1 characterizes the attitude towards computer hooligans and virus writes:
+    5 - "Wolf - the orderly of the forest";
+    4 - "Only the lamer is afraid of them";
+    3 - neutral;
+    2 - condemning;
+    1 - "socially dangerous elements";
+  The s2 parameter characterizes the attitude towards computer "pirates" and crackers:
+    5 - "monopoly fighters";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "commonplace thieves"; 
+
+drg<s>
+  Attitude towards the idea of drug legalization:
+    5 - "Down with the prohibition that feeds the drug mafia!";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "idiotic inventions of drug addicts";
+
+xsc<s>
+  Attitudes towards unofficial (non-academic) sciences and revolutionary concepts in the official sciences:
+    5 - "Conservatism" of academics "inhibits cognition";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "There is only one science - official, the rest is charlatanism";
+
+UFO<s>
+  Attitude to the problem of UFOs and extraterrestrial civilizations:
+    5 - "They've been here for a long time";
+    4 - "Aliens do visit Earth, although their role is often exaggerated";
+    3 - neutral;
+    2 - "Perhaps there is alien life somewhere, but it is very far away and
+         not relevant";
+    1 - "Life on Earth is unique"; 
+
+fuk<s>
+  Attitude towards obscene language:
+    5 - "Only jerks can't swear";
+    4 - "a convenient way to express many emotions";
+    3 - neutral;
+    2 - "unless only in extreme cases";
+    1 - "completely unacceptable for a cultured person";
+
+
+                         Psychology and lifestyle
+
+psy<n>
+  Personality type, determined by the following empirical test  [Пинт  А.А.
+  Самоучитель безопасной езды, практическое пособие. - М.: За  рулём,  1998,
+  с. 178]. The test does not pretend to be scientific, but it is convenient 
+  in practice for non-specialists. Note also the alternate Psy token described 
+  by below. 
+  1. Interlace your fingers and notice the hand with the finger on top:
+    0 - right;
+    1 - left.
+  2. Place straightened hands with thumbs spaced apart in front of you so that 
+  they form a septum with a gap. Look at a small object through this gap with both eyes. 
+  Then, while remaining in the same position, close your right and left eyes alternately. 
+  You will only see the object with one eye. Notice this eye: 
+    0 - right;
+    1 - left.
+  3. Interlace your arms over your chest and notice the hand that is on top:
+    0 - right;
+    1 - left.
+  4. Clap your hands and notice the palm on top:
+    0 - right;
+    1 - left.
+  The resulting digits are joined as the digits of a 2-ary number in the order of 1234. 
+  Then this number is converted into a hexadecimal representation, in which it is written. 
+  Test interpretation: 
+    0000 (0) - Orientation to conventional wisdom. Conservatism with the most stable behavior 
+               ("correct" type). 
+    0001 (1) - Insecure conservatism. Weak temperament. Indecision.
+    0010 (2) - Strong type who does not perceive the weak. Determination. Feeling
+               humor. Energy. A tendency to flirt. Temperament. Artistry.
+    0011 (3) - A rare and independent type. High contact, but honey lazy addiction.
+    0100 (4) - Business type combining analytical mind and gentleness
+                (type of "business woman"). Slow addictive. Caution.
+                Prudence. Tolerance. Delayed development of relations.
+                Some coldness. 
+    0101 (5) - Weakest type. Defenselessness. Failure to go into conflict. 
+               Exposure to various influences. 
+    0110 (6) - Restlessness, frequent emotional hunger. Ability not to create conflicts. 
+               Some impermanence. Emotional slowness. Languor. Simplicity. Courage in 
+               communication. The ability to switch to a new type of behavior. 
+    0111 (7) - Inconsistency and independence. Analyticity combined with
+                emotionality.
+    1000 (8) - Good adaptability. Emotionality combined with sufficient persistence in 
+               strategic matters. High susceptibility to other people's influence. 
+               Easy contact with almost all other types. Phlegmatic tendency. 
+    1001 (9) - Softness, compliance with careful influence. Requires especially
+                careful attitude to yourself (type of "little queen").
+    1010 (A) - The strongest type, difficult to convince. Perseverance, sometimes turning
+               into an obsession with secondary details. Strong personality. 
+               The ability to overcome difficulties. Some conservatism due to lack of attention
+                to someone else's point of view. Doesn't like infantilism. 
+    1011 (B) - Strong, but not obsessive, almost unconvincing. Internal aggressiveness, 
+               covered by external softness and emotionality. Fast interaction, but honey
+               lingering mutual understanding. 
+    1100 (C) - Friendliness and simplicity, some scattered interests.
+    1101 (D) - Innocence. Softness. Gullibility. A very rare type.
+    1110 (E) - Emotionality combined with determination. The tendency to make ill-considered 
+               decisions under the influence of emotions. 
+    1111 (F) - The ability to look at things in a new way. The greatest emotionality. Individuality. 
+               Selfishness. Stubbornness. The desire for self-defense, sometimes turning into isolation. 
+
+Psy<l1><l2><l3><l4><l5>
+  Personality type determined in socionics (analytical psychology C.G. Jung)
+   [developed by Sergey Ermakov (wMaster) +-- and Roman Balaev (biowit)]. Work
+   with a token requires special knowledge, or consultation with a specialist,
+   therefore, as an alternative convenient in practice for non-specialists,
+   you can use the psy token described above.
+  The l1 parameter describes introversion / extroversion: 
+    I - introvert;
+    E - extrovert.
+  The l2 parameter describes the sensibility/intuitiveness: 
+    S - sensoric;
+    N - intuitive.
+  The l3 parameter describes consistency/ethics: 
+    T - thinking;
+    F - feeling;
+  The l4 parameter describes rationality/irrationality:
+    J - judging (rationality);
+    P - perceiving (irrationality);
+  The l5 parameter describes your temperament:
+    c - choleric;
+    f - phlegmatic;
+    s - sanguine;
+    m - melancholic. 
+
+mus<l><s>
+  Attitude towards music.
+  The l parameter describes the preferred musical styles [developed by Sergey
+  Ermakov (wMaster) +-- and Dima Bystrov]:
+    c - classical music;
+    f - folk music;
+    I - instrumental music;
+    J - jazz (classical);
+    B - blues;
+    A - vanguard;
+    R - rock;
+    M - metal;
+    Y - synthesized AY / YM music;
+    m - heavy metal;
+    p - punk rock (alternative music);
+    a - author's song;
+    v - popular vocal music;
+    d - disco, brit-pop, synth-pop;
+    e - electronic classical music;
+    r - rap;
+    b - breakbeat, jungle, tech-step;
+    i - IDM;
+    j - jazz (improvisation);
+    t - trance, ambient;
+    T - techno, minimal;
+    h - house, garage, acid jazz;
+    H - hardcore, happy hardcore, old school;
+    G - gabba, speedcore, noisecor;
+  The s parameter describes how often you listen to music:
+    5 - constantly;
+    4 - often;
+    3 - moderately;
+    2 - rarely;
+    1 - never;
+
+TV<s>
+  Do you often watch TV:
+    5 - constantly;
+    4 - often;
+    3 - moderately;
+    2 - rarely;
+    1 - never;
+
+gam<l><s>
+  Attitude towards computer games.
+  The <l> parameter describes the preferred game classes:
+    3 - 3D action;
+    S - strategic;
+    e - economic and strategic;
+    i - abstract intellectual;
+    q - dialogue ("quests");
+    s - simulators;
+    w - military-strategic {war};
+  The s parameter describes how often you play:
+    5 - almost round the clock every day;
+    4 - a lot;
+    3 - moderately;
+    2 - rarely;
+    1 - never;
+
+RP<s>
+  Attitude towards role-playing games:
+    5 - "Without this the world is wretched";
+    4 - approving;
+    3 - neutral;
+    2 - condemning;
+    1 - "kindergarten";
+
+hum<s>
+  How do you rate your sense of humor:
+    5 - big "hokhmach";
+    4 - "I like to joke";
+    3 - normal;
+    2 - "I usually don't like it";
+    1 - "I hate nonsense";
+
+lab<s1><s2><s3><s4><s5>
+  How do you assess your performance.
+  The s1 parameter describes the initiative:
+    5 - "easy to climb";
+    4 - high;
+    3 - medium;
+    2 - low;
+    1 - "hard to climb";
+  The s2 parameter describes hard work on one's own initiative:
+    5 - a workaholic;
+    4 - quite active;
+    3 - average;
+    2 - rather lazy;
+    1 - a quitter;
+  The parameter s3 describes the ability to be hired:
+    5 - a workaholic;
+    4 - quite active;
+    3 - average;
+    2 - rather lazy;
+    1 - a quitter;
+  The s4 parameter describes ingenuity:
+    5 - "generator of ideas";
+    4 - high;
+    3 - medium;
+    2 - low;
+    1 - template;
+  The s5 parameter describes conscientiousness:
+    5 - a perfectionist;
+    4 - high;
+    3 - medium;
+    2 - low;
+    1 - hack;
+
+lov<s>
+  The nature of sexual activity:
+    5 - "I have a permanent partner";
+    4 - "mostly with an informal partner";
+    3 - moderate;
+    2 - "Do not mind sometimes flirting";
+    1 - active "pickup". 
+
+lib<s1><s2><s3><s4>
+  How often do you read literature:
+  The s1 parameter describes prosaic fiction:
+    5 - constantly;
+    4 - often;
+    3 - moderately;
+    2 - rarely;
+    1 - never;
+  The s2 parameter describes the verses:
+    5 - constantly;
+    4 - often;
+    3 - moderately;
+    2 - rarely;
+    1 - never;
+  The s3 parameter describes popular science literature:
+    5 - constantly;
+    4 - often;
+    3 - moderately;
+    2 - rarely;
+    1 - never;
+  The s4 parameter describes scientific, technical and special literature:
+    5 - constantly;
+    4 - often;
+    3 - moderately;
+    2 - rarely;
+    1 - never; 
+
+edu<s1><s2>
+  Education and erudition.
+  Parameter s1 describes formal education:
+    5 - scientific degree;
+    4 - higher;
+    3 - secondary or secondary special;
+    2 - incomplete secondary;
+    1 - initial.
+  Parameter s2 describes one's own assessment of actual education:
+    5 - "walking encyclopedia";
+    4 - quite erudite;
+    3 - average;
+    2 - below average;
+    1 - ignorant. 
+
+lng<s><l>
+  Knowledge of foreign languages.
+  The s parameter describes the knowledge of the English language:
+    5 - perfect;
+    4 - not bad;
+    3 - average;
+    2 - at the beginner level;
+    1 - "I don't know".
+  The l parameter describes the knowledge of other foreign languages. Languages are specified in
+  as ISO 639 2-letter designators listed alphabetically back to back.
+
+mth<s>
+  Relationship to the exact sciences:
+    5 - an ardent adherent;
+    4 - "I respect";
+    3 - neutral;
+    2 - "I do not like";
+    1 - "I Hate". 
+
+ph<s>
+  Philosophical views:
+    5 - a convinced materialist;
+    4 - a doubting materialist;
+    3 - undecided;
+    2 - a fan of mysticism;
+    1 - deeply religious. 
+
+God<l>
+  Religion:
+    C - Confucianism;
+    b - Buddhism;
+    c - Catholicism;
+    e - esoteric religious systems;
+    i - Hinduism;
+    j - Judaism;
+    k - Krishnaism;
+    m - Islam;
+    o - Orthodoxy;
+    p - Protestantism;
+    n - the latest religious systems;
+    l - other local religious systems. 
+
+co<s>
+  Sociability:
+    5 - "I am ready to take part even in an official event";
+    4 - "I will gladly come to a party, but informal";
+    3 - "I can meet, but only in a narrow circle";
+    2 - "I agree to talk by phone";
+    1 - "I strictly observe virtuality". 
+
+arg<s>
+  Your tendency to accept someone else's opinion:
+    5 - "No way!";
+    4 - "In a dispute, truth is born";
+    3 - neutral;
+    2 - "Better to agree than to persuade";
+    1 - "Just don't hit me!" 
+
+hom<s>
+  Dwelling and its interior:
+    5 - the dwelling of a madman;
+    4 - with some non-standard elements;
+    3 - standard;
+    2 - "I'm not filling the house alone";
+    1 - "I have little of my own." 
+
+cok<s>
+  Do you like to cook:
+    3 - "I'm fond of";
+    2 - "Moderate";
+    1 - "I prefer to eat ready-made." 
+
+veg<s>
+  Your attitude towards vegetarianism:
+    5 - an old vegetarian;
+    4 - Young vegetarian;
+    3 - neutral;
+    2 - "You won't last long on a carrot";
+    1 - "We don't keep the vegetarian one!" 
+
+drn<l>
+  Favorite drinks:
+    C - alcoholic cocktails;
+    G - carbonated;
+    K - jelly;
+    b - beer;
+    c - non-alcoholic cocktails;
+    f - coffee;
+    g - cognacs;
+    h - chocolat;
+    i - infusion;
+    j - juices;
+    k - kvass;
+    l - liqueurs;
+    m - dairy;
+    o - compotes;
+    r - rums;
+    s - mineral;
+    t - teas;
+    v - vodka;
+    w - wine;
+
+pet<l>
+  Pets or plants:
+     a - amphibians;
+     b - birds;
+     c - cats;
+     d - dogs;
+     f - indoor flowers;
+     i - invertebrates;
+     m - mouses;
+     q - aquarium animals;
+     r - reptiles;
+     v - martens or viverrids. 
+
+nat<s>
+  Do you often visit nature:
+    5 - "I live constantly";
+    4 - often;
+    3 - moderately;
+    2 - rarely;
+    1 - "All nature is somewhere outside the window." 
+
+
+                            Using Phainocode
+
+Phainocode can be used anywhere in a letter as a continuous block, arbitrarily broken 
+into lines. The main body of the code must be preceded by a signature identifying
+its version and separated from the rest of the elements by a space. 
+For this standard, the signature will be: 
+
+     Phaino 4.1
+
+At the end of the code body, immediately after its last character must be followed by
+a comma (;) indicating its end. One of the preferred options for placing Phainocode in
+letter is a sequence of kludge. Moreover, it will be conditionally invisible, i.e.
+displayed only in the mode of displaying technical information of the letter. In the 
+case of FTN correspondence, each Phainocode line must be started with a sequence of 
+characters: 
+
+     GC:
+
+which is a common kludge for geek codes.
+    Another place to place Phainocode in a letter can be a signature, which is 
+technically convenient to organize in most email programs. Signature sizes 
+are often limited by FTN regulations, but Phainocode is quite compact and, 
+if used judiciously, should usually fit into the prescribed framework.
+Below is an example of real Phainocode: 
+
+Phaino 4.1 _BD-L+=1P-Tx*=1 b011279 PC9353 netBFQ-Wp- Int4 com2 msg2$< ech3
+osD$W>L Eg1 pub4 USA2 god1 (c)1 hak45+ xsc4 UFO4=1< PsyINTP/INTJm mus01 TV2
+gam01 hum2 lab25355 lib11-44 edu45 lng3>eo=1< co1< arg4< petacqr;
+
+
+                           Additional Notes
+
+Practice has shown that user perceptions of the purpose and application
+Phainocode (ex. Geek-R) often contains a number of common errors. Taking 
+this into account, the author considers it necessary to make a number of remarks:
+
+- Contrary to the prevailing disapproval in the online community to geek-codes, 
+derived from the frivolity, elitism and some monstrosity of their common 
+American ancestor, Phainocode does not deserve indiscriminate reckoning 
+as a meaningless information "husk", abundantly used in network correspondence by 
+inexperienced youth, which is often made on the basis of only general external 
+similarities and without due familiarity with the standard itself.
+
+- No code token is required. Attempts to use it instead of a questionnaire, putting 
+all possible tokens in the code will most likely not lead to nothing good.
+
+- Despite its formalization, Phainocode was created as a language for human
+understanding, not a database for machine decryption. In natural language the 
+omission and reduction of information that is not of interest or that can be easily 
+inferred from another is constantly used. There is no need to scrupulously specify 
+all possible information and details in your code, inflating it to colossal sizes - 
+it is enough to describe to them only what is really important for you in the current 
+situation and what they cannot guess rest.
+
+- The orientation of the scales of relative values ​​is arbitrary in many cases
+(otherwise it is simply impossible to do). You should not look for any ideological 
+attitudes or reflections of the author's tastes in them and blame him for this.
+
+- It is possible to prepare and use different versions of the code for different
+use cases (for example, different echo conferences depending on a specific thematic 
+specifics or a compact version for echo conferences and a complete one for netmail).
+
+- Do not forget about the rich possibilities for the transfer of information,
+which metacharacters provide in combination with the standard values ​​and together.
+
+- If you put code in kludges, don't make the lines too long and make sure that their ends
+are not wrapped on the next line by postal editors without a protective character.
+Use the GC: kludge to make it easier for various software to sample code. 
+
+
+                          Full Phainocode of the author
+
+Phaino 4.1 _BD-L+=1P-Tx* b011279 XX3 bod1641 kg56 HarBb3 har000 eyeBb4
+skn1 drs331 bad555 Hea4 hea4 sp1 PC9353 hw2+DMPmns Net353 netBFQ-Wp- Int4
+com2 msg2$< ech3 sl3 OS3151 osD$W>L prg001 dem2 WWWCHX- CvP0 wrz1$ hex3 pol4
+ec4 Eg1 pub4 gov3 USA2 mil1 gun? exe1 sex5 abo5 god1 (c)1 hak45+ drg5 xsc4
+UFO4=1< fuk3 psyF/A/9 PsyINTP/INTJm mus01 TV2 gam01 RP3 hum2 lab25355 lov5
+lib11-44 edu45 lng3>eo=1< mth4 ph& God0 co1< arg4< hom5 cok2 veg4 drnjt
+petacqr nat2$;
