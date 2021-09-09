@@ -10,7 +10,7 @@ EN Version available in: PHAINO-ENG.TXT
 
 ## Run script
 
-Russian version (Not available yet):
+Russian version:
 
 `sh -c "$(curl -fsSL https://raw.github.com/Whiletruedoend/phainocode/master/phainocode-ru.sh)"`
 
