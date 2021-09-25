@@ -103,7 +103,7 @@ encryptMenu(){
   x - non-academic sciences and theories {x-science}.\n"
 
 	EXAMPLE="AMPSam"
-	PERMITTED_SYMBOLS="A B C D E G H J L M N O P S T U W a c d e l m n p s u x # 0 @ & ? ~ + - * $ > ! % < = \ | / 1 2 3 4 5"
+	PERMITTED_SYMBOLS="A B C D E G H J L M N O P S T U W a c d e l m h n p s u x # 0 @ & ? ~ + - * $ > ! % < = \ | / 1 2 3 4 5"
 	NEW_CODE="$NEW_CODE _$(checkAnswer "$EXAMPLE" "$PERMITTED_SYMBOLS")"
 	CURRENT_ANSWER=$(( CURRENT_ANSWER + 1 ))
   #birthdate
