@@ -12,11 +12,11 @@ EN Version available in: PHAINO-ENG.TXT
 
 Russian version:
 
-`sh -c "$(curl -fsSL https://raw.github.com/Whiletruedoend/phainocode/master/phainocode-ru.sh)"`
+`bash -c "$(curl -fsSL https://raw.github.com/Whiletruedoend/phainocode/master/phainocode-ru.sh)"`
 
 English version:
 
-`sh -c "$(curl -fsSL https://raw.github.com/Whiletruedoend/phainocode/master/phainocode.sh)"`
+`bash -c "$(curl -fsSL https://raw.github.com/Whiletruedoend/phainocode/master/phainocode.sh)"`
 
 ## Contact
 Feel free to contact me about ideas or code implementation:
